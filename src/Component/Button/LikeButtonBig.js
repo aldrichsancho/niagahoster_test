@@ -1,0 +1,18 @@
+
+function LikeButtonBig() {
+    return (
+        <div className="flex flex-row space-x-3 items-center">
+            <svg className="hover:opacity-50" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.5 31.5H27C28.245 31.5 29.31 30.75 29.76 29.67L34.29 19.095C34.425 18.75 34.5 18.39 34.5 18V15C34.5 13.35 33.15 12 31.5 12H22.035L23.46 5.145L23.505 4.665C23.505 4.05 23.25 3.48 22.845 3.075L21.255 1.5L11.37 11.385C10.83 11.925 10.5 12.675 10.5 13.5V28.5C10.5 30.15 11.85 31.5 13.5 31.5ZM13.5 13.5L20.01 6.99L18 15H31.5V18L27 28.5H13.5V13.5ZM1.5 13.5H7.5V31.5H1.5V13.5Z" fill="#546071" />
+            </svg>
+            {props.like > 0 ?
+                <span className="text-xl text-[#546071]">{props.like}</span>
+                :
+                null
+            }
+            
+        </div>
+    );
+}
+
+export default LikeButtonBig;
